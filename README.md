@@ -1,3 +1,3 @@
 # project-one
 
-This project is the best thing since Turducken.
+This project is the best thing since Fried Chicken.
