@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <img src="assets/images/me.jpg" class="my-img">
     <h1>Hola from Project One!</h1>
+    <script>
+        $(".my-img").on("click", function (e) {
+            e.preventDefault();
+            var domainUrl = window.location.hostname;
+            alert(domainUrl);
+            var imgUrl = domainUrl + "/" + $(this).attr("src");
+            alert(imgUrl);
+        });
+    </script>
 </body>
+
 </html>
