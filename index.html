@@ -12,14 +12,11 @@
 
 <body>
     <img src="assets/images/avatar.jpg" class="my-img">
-    <h1>Hola from Project One!</h1>
-    <script>
-        $(".my-img").on("click", function (e) {
-            e.preventDefault();
-            var domainUrl = window.location.hostname;
-            var imgUrl = domainUrl + "/" + $(this).attr("src");
-            alert(imgUrl);
-        });
-    </script>
+    <h1>Hola <span id="username"></span> from Project One!</h1>
+    <form id="submit-form">
+        <input type="text" placeholder="user name" id="name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
