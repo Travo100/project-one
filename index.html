@@ -17,7 +17,6 @@
         $(".my-img").on("click", function (e) {
             e.preventDefault();
             var domainUrl = window.location.hostname;
-            alert(domainUrl);
             var imgUrl = domainUrl + "/" + $(this).attr("src");
             alert(imgUrl);
         });
